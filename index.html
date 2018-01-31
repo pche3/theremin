@@ -1,49 +1,41 @@
-<!-- must always include to allow styling -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!DOCTYPE html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    $("#inside-well").css("background-color","rgb(0,0,70)");
-    $("#outside-well").css("background-color","grey");
-  });
-</script>
-
-<style>
-  .black-text {
-    color: black;
-  }
-  h3 {
-    color: white;
-  }
-</style>
-
-<div classs="container-fluid" style="background-color: rgb(0,0,70);padding-bottom:15px">
-  <div class="well" id="outside-well">
-    <h1 class="text-center" style="color:black">Digital Theremin with LED</h3>
-    <h5 class="text-center" style="color:black">Design By: Phong Che, Juan Chapa, Chawakorn Wichulada</h5>
-    <div class="well center-block" id="inside-well" style="width: 70%">
-      <h3 class="">What is a Theremin?</h3>
-      <div class="center-block" style="max-width:400px "><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/pamelia_kurstin_plays_the_theremin" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-      <p class="text-white text-center">*A video demonstrating a Theremin from TED
-      <div class="text-white" id="point1">
-        <ul>
-          <li>Invented in 1928 by Leon Theremin</li>
-          <li>Electronic instrument that generates pitches without physical contact from user</li>
-          <li>Antennas act as capacitors taht change volume and pitch</li>
-        </ul>  
-      </div>
-      <h3 class="">Problems with Original Theremin</h3>
-      <div class="text-white" id="point2">
-        <ul>
-          <li>Very difficult to play a precise pitch</li>
-          <li>Distance and volume readings vary depending on external factors such as humidity and temperature</li>
-        </ul>
-      </div>
-      <h3 class="">Concept</h3>
-      <div class="text-white" id="point3">
-        <p>The main idea behind our project was to re-imagine the Theremin. The original Theremin is an
+<html>
+    <head>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <link ref="stylesheet" href="//pche3.github.io/theremin/style.css">
+    </head>
+    <body>
+    <main>
+      <div classs="container-fluid">
+        <div class="well center-block" id="outter_well">
+          <h1 class="text-center well_heading">Digital Theremin with LED</h3>
+          <h5 class="text-center well_heading">Design By: Phong Che, Juan Chapa, Chawakorn Wichulada</h5>
+          <div class="well center-block" id="inner_well">
+            <h3 class="well_heading">What is a Theremin?</h3>
+            <div class="center-block">
+              <div class="video_block"><iframe class="video" src="https://embed.ted.com/talks/pamelia_kurstin_plays_the_theremin" width="854" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
+              </div> 
+            </div>
+            <p class="text-white text-center inside_well">*A video demonstrating a Theremin from TED</p>
+            <div class="inside_well">
+              <ul>
+                <li>Invented in 1928 by Leon Theremin</li>
+                <li>Electronic instrument that generates pitches without physical contact from user</li>
+                <li>Antennas act as capacitors taht change volume and pitch</li>
+              </ul>  
+            </div>
+            <h3 class="well_heading">Problems with Original Theremin</h3>
+            <div class="inside_well">
+            <ul>
+              <li>Very difficult to play a precise pitch</li>
+              <li>Distance and volume readings vary depending on external factors such as humidity and temperature</li>
+            </ul>
+            </div>
+            <h3 class="well_heading">Concept</h3>
+            <div class="inside_well">
+              <p>The main idea behind our project was to re-imagine the Theremin. The original Theremin is an
 analog instrument invented in the 1920s that is played by positioning hands in midair at specific
 distances from two antennae to control volume and pitch respectively. The goal was to change how the Theremin sounds as well as how it is played. We
 accomplished the task by including an LED display that shows the user what frequencies they
@@ -51,132 +43,47 @@ are playing, a killswitch that creates a stuttering effect, a volume foot pedal,
 selection. These features are designed to ease handling of the instrument for the player, eliminate
 challenges the original Theremin presented, and improve upon the functionality of the
 instrument. </p>
+            </div>
+            <h3 class="well_heading">Modifications</h3>
+            <div class="inside_well">
+              <ul>
+                <li>LED display to help user by displaying each note played</li>
+                <li>Primary volume control using the foot</li>
+                <li>Generate different sounds using different ptiches and waveforms</li>
+                <li>Kill switch to allow stutter effect</li>
+              </ul>
+            </div>
+            <h3 class="well_heading">Our Digital Theremin</h3>
+            <div class="inside_well">
+              <div class="center-block video_block">
+                <iframe class="video" src="https://drive.google.com/file/d/1rc9ZgCCwERjanXBxtIeA_DPMojooDaTm/preview" width="250px" height="250px" frameborder="0" scrolling="no" allowfullscreen sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"></iframe>   
+              </div>
+              <p class="text-center inside_well">*Note that the foot pedal is connected to the side of the chassiss</p>
+           </div>
+           <h3 class="well_heading">Components for the design</h3>
+           <div class="inside_well">
+              <ul>
+                <li>Power Module - controls the amount of voltage across all components</li>
+                <li>Sensor Module - detect distance between hand and sensor</li>
+                <li>Control Module - correlate distance to a music note</li>
+                <li>LED Module - determine which LED to light up base on note</li>
+                <li>Waveform Module - modify the sound wave to make it more unique</li>
+              </ul>  
+           </div>
+           <h3 class="well_heading">Notes and Display</h3>
+           <div class="inside_well">
+              <ul>
+                <li>12 Notes representation of an octave</li>
+                <li>5 Red LEDs for Sharp note</li>
+                <li>7 Green LEDs for Normal note</li>
+              </ul>
+           </div> 
+          </div>
+          <a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=9502" target="_blank"><button class="btn btn-info center-block well_width">Learn more</button></a>
+        </div>
+        <h4 class="text-center">Website implemented by<a href="https://www.linkedin.com/in/phong-che-181b94154/" target="_blank"><span class="blue-text"> Phong Che</span></a></h4>
+        <h5 class="text-center">Original content and design may be subject to copyright</h5>
       </div>
-      <h3 class="">Modifications</h3>
-      <div class="text-white" id="point4">
-        <ul>
-          <li>LED display to help user by displaying each note played</li>
-          <li>Primary volume control using the foot</li>
-          <li>Generate different sounds using different ptiches and waveforms</li>
-          <li>Kill switch to allow stutter effect</li>
-        </ul>
-      </div>
-      <h3 class="">Our Digital Theremin</h3>
-      <div class="text-white" id="point5">
-        <div class="center-block" style="max-width:400px "><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://drive.google.com/file/d/1rc9ZgCCwERjanXBxtIeA_DPMojooDaTm/preview" width="250px" height="250px" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"></iframe></div></div>
-      <p class="text-center">*Note that the foot pedal is connected to the side of the chassiss</p>
-      </div>
-      <h3 class="">Components for the design</h3>
-      <div class="text-white" id="point6">
-        <ul>
-          <li>Power Module - controls the amount of voltage across all components</li>
-          <li>Sensor Module - detect distance between hand and sensor</li>
-          <li>Control Module - correlate distance to a music note</li>
-          <li>LED Module - determine which LED to light up base on note</li>
-          <li>Waveform Module - modify the sound wave to make it more unique</li>
-        </ul>  
-       </div>
-       <h3 class="">Notes and Display</h3>
-      <div class="text-white" id="point7">
-        <ul>
-          <li>12 Notes representation of an octave</li>
-          <li>5 Red LEDs for Sharp note</li>
-          <li>7 Green LEDs for Normal note</li>
-        </ul>
-       </div> 
-    </div>
-    <a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=9502"><button class="btn btn-block btn-info center-block" style="width:70%">Learn more</button></a>
-</div>
-  <h4 class="text-center" style="color:white">Website implemented by <a href="https://www.linkedin.com/in/phong-che-181b94154/"><span class="blue-text">Phong Che</span></a></h4>
-  <h5 class="text-center" style="color:white">Original content and design may be subject to copyright</h5><!DOCTYPE html>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    $("#inside-well").css("background-color","rgb(0,0,70)");
-    $("#outside-well").css("background-color","grey");
-  });
-</script>
-
-<style>
-  .black-text {
-    color: black;
-  }
-  h3 {
-    color: white;
-  }
-</style>
-
-<div classs="container-fluid" style="background-color: rgb(0,0,70);padding-bottom:15px">
-  <div class="well" id="outside-well">
-    <h1 class="text-center" style="color:black">Digital Theremin with LED</h3>
-    <h5 class="text-center" style="color:black">Design By: Phong Che, Juan Chapa, Chawakorn Wichulada</h5>
-    <div class="well center-block" id="inside-well" style="width: 70%">
-      <h3 class="">What is a Theremin?</h3>
-      <div class="center-block" style="max-width:400px "><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/pamelia_kurstin_plays_the_theremin" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-      <p class="text-white text-center">*A video demonstrating a Theremin from TED
-      <div class="text-white" id="point1">
-        <ul>
-          <li>Invented in 1928 by Leon Theremin</li>
-          <li>Electronic instrument that generates pitches without physical contact from user</li>
-          <li>Antennas act as capacitors taht change volume and pitch</li>
-        </ul>  
-      </div>
-      <h3 class="">Problems with Original Theremin</h3>
-      <div class="text-white" id="point2">
-        <ul>
-          <li>Very difficult to play a precise pitch</li>
-          <li>Distance and volume readings vary depending on external factors such as humidity and temperature</li>
-        </ul>
-      </div>
-      <h3 class="">Concept</h3>
-      <div class="text-white" id="point3">
-        <p>The main idea behind our project was to re-imagine the Theremin. The original Theremin is an
-analog instrument invented in the 1920s that is played by positioning hands in midair at specific
-distances from two antennae to control volume and pitch respectively. The goal was to change how the Theremin sounds as well as how it is played. We
-accomplished the task by including an LED display that shows the user what frequencies they
-are playing, a killswitch that creates a stuttering effect, a volume foot pedal, and waveform
-selection. These features are designed to ease handling of the instrument for the player, eliminate
-challenges the original Theremin presented, and improve upon the functionality of the
-instrument. </p>
-      </div>
-      <h3 class="">Modifications</h3>
-      <div class="text-white" id="point4">
-        <ul>
-          <li>LED display to help user by displaying each note played</li>
-          <li>Primary volume control using the foot</li>
-          <li>Generate different sounds using different ptiches and waveforms</li>
-          <li>Kill switch to allow stutter effect</li>
-        </ul>
-      </div>
-      <h3 class="">Our Digital Theremin</h3>
-      <div class="text-white" id="point5">
-        <div class="center-block" style="max-width:400px "><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://drive.google.com/file/d/1rc9ZgCCwERjanXBxtIeA_DPMojooDaTm/preview" width="250px" height="250px" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"></iframe></div></div>
-      <p class="text-center">*Note that the foot pedal is connected to the side of the chassiss</p>
-      </div>
-      <h3 class="">Components for the design</h3>
-      <div class="text-white" id="point6">
-        <ul>
-          <li>Power Module - controls the amount of voltage across all components</li>
-          <li>Sensor Module - detect distance between hand and sensor</li>
-          <li>Control Module - correlate distance to a music note</li>
-          <li>LED Module - determine which LED to light up base on note</li>
-          <li>Waveform Module - modify the sound wave to make it more unique</li>
-        </ul>  
-       </div>
-       <h3 class="">Notes and Display</h3>
-      <div class="text-white" id="point7">
-        <ul>
-          <li>12 Notes representation of an octave</li>
-          <li>5 Red LEDs for Sharp note</li>
-          <li>7 Green LEDs for Normal note</li>
-        </ul>
-       </div> 
-    </div>
-    <a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=9502"><button class="btn btn-block btn-info center-block" style="width:70%">Learn more</button></a>
-</div>
-  <h4 class="text-center" style="color:white">Website implemented by <a href="https://www.linkedin.com/in/phong-che-181b94154/"><span class="blue-text">Phong Che</span></a></h4>
-  <h5 class="text-center" style="color:white">Original content and design may be subject to copyright</h5>
+    </main>
+  </body>
+</html>
