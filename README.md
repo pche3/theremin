@@ -2,6 +2,7 @@
 
 <h1>Building an informative HTML page</h1>
 <img src="https://github.com/pche3/theremin/blob/master/preview_theremin.png" alt="Preview">
+Check it out at: https://pche3.github.io/theremin/
 
 <h2>Objective</h2>
 Create a informative page on a specific topic for user.
